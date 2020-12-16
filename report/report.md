@@ -67,11 +67,11 @@ Arthur Bécaud and Bruno Egremy.
 >
 > Example:
 > ```
-|-- root folder
-  |-- logs
-    |-- task 1
-    |-- task 3
-    |-- ...
+> |-- root folder
+>   |-- logs
+>     |-- task 1
+>     |-- task 3
+>     |-- ...
 > ```
 
 **2.**
@@ -93,13 +93,13 @@ Arthur Bécaud and Bruno Egremy.
 **1.**
 > You probably noticed when we added `xz-utils`, we have to rebuild the whole image which took some time. What can we do to mitigate that? Take a look at the Docker documentation on [image layers](https://docs.docker.com/storage/storagedriver/). Tell us about the pros and cons to merge as much as possible of the command. In other words, compare:
 > ```
-RUN command 1
-RUN command 2
-RUN command 3
+> RUN command 1
+> RUN command 2
+> RUN command 3
 > ```
 > vs.
 > ```
-RUN command 1 && command 2 && command 3
+> RUN command 1 && command 2 && command 3
 > ```
 > There are also some articles about techniques to reduce the image size. Try to find them. They are talking about `squashing` or `flattening` images.
 
