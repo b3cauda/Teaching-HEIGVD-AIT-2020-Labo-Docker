@@ -1,0 +1,5 @@
+PS C:\Users\b3cauda> docker ps
+CONTAINER ID   IMAGE                  COMMAND   CREATED              STATUS              PORTS                                                                                    NAMES
+1a3e0f785b08   labo4_docker_webapp2   "/init"   41 seconds ago       Up 39 seconds       7373/tcp, 7946/tcp, 0.0.0.0:4001->3000/tcp                                               s2
+97722483e954   labo4_docker_webapp1   "/init"   About a minute ago   Up About a minute   7373/tcp, 7946/tcp, 0.0.0.0:4000->3000/tcp                                               s1
+c449110509c9   labo4_docker_haproxy   "/init"   2 minutes ago        Up 2 minutes        0.0.0.0:80->80/tcp, 7373/tcp, 0.0.0.0:1936->1936/tcp, 0.0.0.0:9999->9999/tcp, 7946/tcp   ha

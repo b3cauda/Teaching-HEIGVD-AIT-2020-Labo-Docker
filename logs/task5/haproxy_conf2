@@ -1,3 +1,4 @@
+root@c449110509c9:/# cat /usr/local/etc/haproxy/haproxy.cfg
 # Global configuration for HAProxy
 # http://cbonte.github.io/haproxy-dconv/2.2/configuration.html#3
 global
@@ -104,6 +105,12 @@ backend nodes
     # With this config, we add the header X-Forwarded-Port
     # http://cbonte.github.io/haproxy-dconv/2.2/configuration.html#4-http-request
     http-request set-header X-Forwarded-Port %[dst_port]
+
+    # Define the list of nodes to be in the balancing mechanism
+    # http://cbonte.github.io/haproxy-dconv/2.2/configuration.html#4-server
+
+        server 97722483e954 192.168.42.11:3000 check
+
 
 # Other links you will need later for this lab
 #

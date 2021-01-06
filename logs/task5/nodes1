@@ -1,0 +1,8 @@
+root@c449110509c9:/# ls -l /nodes
+total 8
+-rw-r--r-- 1 root root 27 Dec 18 10:46 1a3e0f785b08
+-rw-r--r-- 1 root root 27 Dec 18 10:45 97722483e954
+root@c449110509c9:/# cat /nodes/1a3e0f785b08
+1a3e0f785b08 192.168.42.22
+root@c449110509c9:/# cat /nodes/97722483e954
+97722483e954 192.168.42.11

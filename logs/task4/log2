@@ -1,0 +1,2 @@
+root@c91b7c738578:/# cat /tmp/haproxy.cfg
+Container 8d837b3f25a2 has joined the Serf cluster with the following IP address: 192.168.42.11

@@ -1,0 +1,2 @@
+cat /tmp/haproxy.cfg
+Container c91b7c738578 has joined the Serf cluster with the following IP address: 192.168.42.42

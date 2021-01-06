@@ -50,7 +50,7 @@ defaults
 
 # Open the metrics HAProxy page on the port 1936 on any network interface on the host
 # http://cbonte.github.io/haproxy-dconv/2.2/configuration.html#4
-listen stats
+listen stats 
     bind *:1936
     # Enable HAProxy to serve stats about himself and the nodes
     # http://cbonte.github.io/haproxy-dconv/2.2/configuration.html#4-stats%20enable
@@ -104,6 +104,12 @@ backend nodes
     # With this config, we add the header X-Forwarded-Port
     # http://cbonte.github.io/haproxy-dconv/2.2/configuration.html#4-http-request
     http-request set-header X-Forwarded-Port %[dst_port]
+
+    # Define the list of nodes to be in the balancing mechanism
+    # http://cbonte.github.io/haproxy-dconv/2.2/configuration.html#4-server
+    {{#each addresses}}
+	server {{ host }} {{ ip }}:3000 check
+	{{/each}}
 
 # Other links you will need later for this lab
 #

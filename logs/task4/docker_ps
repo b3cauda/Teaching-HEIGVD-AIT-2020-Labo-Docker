@@ -1,0 +1,3 @@
+e9d53247506b   labo4_docker_webapp2   "/init"   2 hours ago   Up 2 hours   7373/tcp, 7946/tcp, 0.0.0.0:4001->3000/tcp                                               s2
+8d837b3f25a2   labo4_docker_webapp1   "/init"   2 hours ago   Up 2 hours   7373/tcp, 7946/tcp, 0.0.0.0:4000->3000/tcp                                               s1
+c91b7c738578   labo4_docker_haproxy   "/init"   2 hours ago   Up 2 hours   0.0.0.0:80->80/tcp, 7373/tcp, 0.0.0.0:1936->1936/tcp, 0.0.0.0:9999->9999/tcp, 7946/tcp   ha

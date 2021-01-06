@@ -1,0 +1,5 @@
+PS C:\Users\b3cauda\Documents\HEIG-VD\Modules\AIT\Labos\Labo4_Docker> docker ps
+CONTAINER ID   IMAGE                  COMMAND   CREATED          STATUS          PORTS                                                                                    NAMES
+47527b6b3fd7   labo4_docker_webapp    "/init"   5 minutes ago    Up 5 minutes    3000/tcp, 7373/tcp, 7946/tcp                                                             labo4_docker_webapp_2
+d07b19dc023f   labo4_docker_webapp    "/init"   13 minutes ago   Up 13 minutes   3000/tcp, 7373/tcp, 7946/tcp                                                             labo4_docker_webapp_1
+882f5bb147c9   labo4_docker_haproxy   "/init"   13 minutes ago   Up 13 minutes   0.0.0.0:80->80/tcp, 7373/tcp, 0.0.0.0:1936->1936/tcp, 0.0.0.0:9999->9999/tcp, 7946/tcp   ha
